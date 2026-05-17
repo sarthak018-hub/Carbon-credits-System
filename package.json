@@ -1,0 +1,15 @@
+{
+  "name": "carbon-credit-mrv",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Carbon Credit MRV & Tracking System with Fraud Detection",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "compile:contracts": "cd contracts && npx hardhat compile",
+    "deploy:amoy": "cd contracts && npx hardhat run scripts/deploy.js --network amoy",
+    "backend:dev": "npm --prefix backend run dev",
+    "frontend:dev": "npm --prefix frontend start",
+    "test:contracts": "cd contracts && npx hardhat test"
+  },
+  "dependencies": {}
+}
